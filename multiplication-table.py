@@ -26,16 +26,16 @@ height = int(input("What will the height of the grid be? "))
 width = list(range(width))
 height = list(range(height))
 
-row1 = 0
+row1 = "0"
 multi = 1
 num1 = 0
 
 for i in range(len(height)):
-    row1 = multi
     for l in range(len(width)):
         num1 += multi
-        row1 = ("{0} {1} ".format(row1, num1))
+        row1 = ("{0} {1}".format(row1, num1))
     print(row1)
+    row1 = multi
     num1 = 0
     multi += 1
 
