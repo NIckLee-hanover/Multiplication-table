@@ -23,19 +23,20 @@ Height of multiplication table: 8
 """
 width = int(input("What will the width of the grid be? "))
 height = int(input("What will the height of the grid be? "))
-width = list(range(width))
-height = list(range(height))
+#width = list(range(width))
+#height = list(range(height))
 
-row1 = "0"
+row1 = 1
 multi = 1
 num1 = 0
 
-for i in range(len(height)):
-    for l in range(len(width)):
-        num1 += multi
-        row1 = ("{0} {1}".format(row1, num1))
+for i in range(height): # repeats the horizontal lines
+    for l in range(width): # generates the rows
+        num1 += multi #adds the mutiplier to the next number in teh row
+        num2 = ("{0:>3}".format(num1)) #formats the number
+        row1 = ("{0 }{1}".format(row1, num2))
     print(row1)
-    row1 = multi
+    row1 = (multi + 1) # Sets the first item in the row
     num1 = 0
     multi += 1
 
