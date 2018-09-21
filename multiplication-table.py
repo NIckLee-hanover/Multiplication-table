@@ -1,8 +1,8 @@
 """
 multiplication-table.py
-Author: <your name here>
-Credit: <list sources used, if any>
-Assignment:
+Author: Nick Lee
+Credit: 
+Assignment: Multiplication table
 
 Write and submit a Python program that prints a multiplication table. The user 
 must be prompted to give the width and height of the table before it is printed.
@@ -23,19 +23,19 @@ Height of multiplication table: 8
 """
 width = int(input("What will the width of the grid be? "))
 height = int(input("What will the height of the grid be? "))
-#width = list(range(width))
-#height = list(range(height))
 
 multi = 1
 
-for i in range(height): # repeats the horizontal lines
-    row1 = ""
-    num1 = 0
+for i in range(height): # repeats for number of rows
+    row1 = "" # first number in the row
+    num1 = 0 # resets starting number
     for i in range(width): # generates the rows
-        num1 += multi #adds the mutiplier to the next number in the row
-        num2 = ("{0:>3}".format(num1)) #formats the number
-        row1 = ("{0}{1}".format(row1, num2))
-    print(row1)
-    row2 = multi # Sets the first item in the row
-    multi += 1
+        num1 += multi # adds the mutiplier to the next number in the row
+        num2 = ("{0:>3}".format(num1)) # formats the next number in the row
+        row1 = ("{0}{1}".format(row1, num2)) # adds the next number to the row
+    print(row1) # prints each horizontal row
+    multi += 1 # increases the multiplier
+
+# sorry for agressive commenting
+
 
