@@ -1,7 +1,7 @@
 """
 multiplication-table.py
 Author: Nick Lee
-Credit: 
+Credit: A little syntax adjustment from stack overflow
 Assignment: Multiplication table
 
 Write and submit a Python program that prints a multiplication table. The user 
