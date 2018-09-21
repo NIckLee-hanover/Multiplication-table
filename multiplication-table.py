@@ -21,3 +21,22 @@ Height of multiplication table: 8
   7  14  21  28  35  42  49  56  63  70
   8  16  24  32  40  48  56  64  72  80
 """
+width = int(input("What will the width of the grid be? "))
+height = int(input("What will the height of the grid be? "))
+width = list(range(width))
+height = list(range(height))
+
+row1 = 0
+multi = 1
+num1 = 0
+
+for i in range(len(height)):
+    row1 = multi
+    for l in range(len(width)):
+        num1 += multi
+        row1 = ("{0} {1} ".format(row1, num1))
+    print(row1)
+    num1 = 0
+    multi += 1
+
+
