@@ -21,8 +21,8 @@ Height of multiplication table: 8
   7  14  21  28  35  42  49  56  63  70
   8  16  24  32  40  48  56  64  72  80
 """
-width = int(input("What will the width of the grid be? "))
-height = int(input("What will the height of the grid be? "))
+width = int(input("Width of multiplication table: "))
+height = int(input("Height of multiplication table: "))
 
 multi = 1
 
