@@ -31,7 +31,7 @@ for i in range(height): # repeats for number of rows
     num1 = 0 # resets starting number
     for i in range(width): # generates the rows
         num1 += multi # adds the mutiplier to the next number in the row
-        num2 = ("{0:>3}".format(num1)) # formats the next number in the row
+        num2 = ("{0:>4}".format(num1)) # formats the next number in the row
         row1 = ("{0}{1}".format(row1, num2)) # adds the next number to the row
     print(row1) # prints each horizontal row
     multi += 1 # increases the multiplier
